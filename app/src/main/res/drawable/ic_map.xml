@@ -1,0 +1,29 @@
+<!--
+  ~ /*
+  ~  * Created by Deepak Kaushik
+  ~  * Copyright (c) 2019. All right reserved.
+  ~  * Last Modified 4/9/19 1:29 AM
+  ~  */
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="49.35"
+    android:viewportHeight="47.85">
+    <path android:fillColor="#00000000"
+        android:pathData="M48.85,28.05v6.67A12.63,12.63 0,0 1,36.22 47.35H13.13A12.63,12.63 0,0 1,0.5 34.72V13.13A12.62,12.62 0,0 1,13.13 0.5h7.46"
+        android:strokeColor="#525257" android:strokeWidth="1"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M48.85,11.85c0,6.27 -5.08,18.9 -11.35,18.9S26.14,18.12 26.14,11.85a11.36,11.36 0,0 1,22.71 0Z"
+        android:strokeColor="#525257" android:strokeWidth="3"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M37.5,11.36m-3.08,0a3.08,3.08 0,1 1,6.16 0a3.08,3.08 0,1 1,-6.16 0"
+        android:strokeColor="#525257" android:strokeWidth="3"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M8.55,27.18L20.42,27.18"
+        android:strokeColor="#525257" android:strokeWidth="3"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M8.55,35L28.3,35"
+        android:strokeColor="#525257" android:strokeWidth="3"/>
+</vector>

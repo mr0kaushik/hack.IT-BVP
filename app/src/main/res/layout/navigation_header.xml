@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+    android:background="@color/colorAccent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="24dp"
+        android:id="@+id/profilePic"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="1dp"
+        android:src="@drawable/ic_boss"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+</LinearLayout>

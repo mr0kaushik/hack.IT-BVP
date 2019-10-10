@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hackathon</string>
+
+    <string name="facebook_app_id">559473968124869</string>
+    <string name="fb_login_protocol_scheme">fb559473968124869</string>
+    <string name="home">Home</string>
+    <string name="about_us">About Us</string>
+    <string name="help">Help</string>
+    <string name="bug_report">Bug Report</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="press_again">Please click BACK again to exit</string>
+    <string name="not_applied">You haven\\\'t submitted any Complaint.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="dev_info">Dev Info</string>
+
+</resources>
