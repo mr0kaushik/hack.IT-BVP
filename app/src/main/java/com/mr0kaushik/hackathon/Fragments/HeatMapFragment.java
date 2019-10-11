@@ -40,8 +40,7 @@ public class HeatMapFragment extends Fragment {
         recyclerView = fragmentView.findViewById(R.id.recyclerView);
 
         //Setting Title
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Workshops");
-
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("HeatMap");
 
 
         //Bottom Behaviour

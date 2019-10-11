@@ -10,9 +10,22 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="press_again">Please click BACK again to exit</string>
-    <string name="not_applied">You haven\\\'t submitted any Complaint.</string>
+    <string name="not_applied">You haven\'t submitted any Complaint.</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="logout">Logout</string>
     <string name="dev_info">Dev Info</string>
+    <string name="sample_name">Sample Name</string>
+    <string name="need_permission">Need Permission</string>
+
+    <string name="sample_desc">Desc</string>
+    <string name="select_category">Select Category</string>
+    <string name="enter_place">Enter Place</string>
+    <string name="name">Name</string>
+    <string name="description">Description (Optional)</string>
+    <string name="submit">Submit</string>
+    <string name="intro">Choose google account to login</string>
+    <string name="must_be_filled">must be filled!</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 
 </resources>

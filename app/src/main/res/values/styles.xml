@@ -17,4 +17,53 @@
     </style>
 
 
+    <style name="PrimaryAppCompatTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+
+    <style name="PrimaryAppCompatTextViewLarge" parent="PrimaryAppCompatTextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="PrimaryAppCompatTextViewSmall" parent="PrimaryAppCompatTextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="SecondaryAppCompatTextView" parent="PrimaryAppCompatTextView">
+        <item name="android:textColor">@color/colorGreyDark</item>
+    </style>
+
+
+    <style name="SecondaryAppCompatTextViewSmall" parent="SecondaryAppCompatTextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="SecondaryAppCompatTextViewExtraSmall" parent="SecondaryAppCompatTextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="EditProfileET">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:focusedByDefault" tools:targetApi="o">false</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+
+    <style name="MAlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/colorGreyLightDark</item>
+        <!--<item name="android:background">@color/colorWhite</item>-->
+    </style>
+
+
 </resources>

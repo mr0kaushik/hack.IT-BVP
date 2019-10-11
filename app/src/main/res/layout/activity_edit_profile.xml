@@ -77,12 +77,12 @@
                     android:layout_height="wrap_content"
                     android:drawableTint="@color/colorAccent"
                     android:focusableInTouchMode="true"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:inputType="text"
                     android:maxLength="30"
                     android:maxLines="1"
                     android:scrollHorizontally="true"
-                    android:text="Sapmle Name" />
+                    android:text="@string/sample_name" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,7 +96,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:id="@+id/barLayout"
-
+        app:elevation="0dp"
         android:background="@android:color/transparent"
         android:layout_height="?attr/actionBarSize">
 
@@ -107,7 +107,7 @@
             app:contentInsetLeft="0dp"
             app:contentInsetRight="0dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
         </com.google.android.material.appbar.MaterialToolbar>
 

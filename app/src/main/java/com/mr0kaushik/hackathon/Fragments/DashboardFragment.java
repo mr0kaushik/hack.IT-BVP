@@ -1,6 +1,7 @@
 package com.mr0kaushik.hackathon.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +18,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.mr0kaushik.hackathon.ApplicationActivity;
+import com.mr0kaushik.hackathon.ApplicationFragment;
 import com.mr0kaushik.hackathon.R;
 import com.mr0kaushik.hackathon.Utils.BottomNavigationViewBehavior;
 
@@ -28,6 +33,8 @@ public class DashboardFragment extends Fragment {
     private FragmentActivity fragmentActivity;
     private RecyclerView recyclerView;
 
+    private FloatingActionButton btnAdd;
+
 
     @Nullable
     @Override
@@ -38,6 +45,15 @@ public class DashboardFragment extends Fragment {
         recyclerView = fragmentView.findViewById(R.id.recyclerView);
 
 
+        btnAdd = fragmentView.findViewById(R.id.btnAdd);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context.getApplicationContext(), ApplicationActivity.class);
+                startActivity(intent);
+            }
+        });
+
         LinearLayout noItemsLayout = fragmentView.findViewById(R.id.noContentLayout);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -46,13 +62,20 @@ public class DashboardFragment extends Fragment {
             noItemsLayout.setVisibility(View.GONE);
         }
 
-
         //Bottom Behaviour
         BottomNavigationView bottomNavigationView = fragmentActivity.findViewById(R.id.bottom_nav_bar);
         CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) bottomNavigationView.getLayoutParams();
         layoutParams.setBehavior(new BottomNavigationViewBehavior());
 
         return fragmentView;
+    }
+
+
+
+    private void showSnackBar(String msg){
+        View view = fragmentView.findViewById(android.R.id.content);
+        Snackbar snackbar = Snackbar.make(view, msg, Snackbar.LENGTH_SHORT);
+        snackbar.show();
     }
 
 

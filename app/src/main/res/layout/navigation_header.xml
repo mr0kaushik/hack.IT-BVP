@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -19,20 +19,54 @@
         app:civ_border_width="1dp"
         android:src="@drawable/ic_boss"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvName"
-        android:textColor="@color/colorWhite"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/profilePic"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_coin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRewardPoints"
+            style="@style/SecondaryAppCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/ivCoin"
+            android:text="50"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        style="@style/SecondaryAppCompatTextViewSmall"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/profilePic"
+        android:layout_height="wrap_content"
         android:paddingTop="8dp"
+        android:text="@string/sample_name"
+        android:textColor="@color/colorWhite"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvEmail"
+        style="@style/SecondaryAppCompatTextViewSmall"
+        android:layout_below="@id/tvName"
+        android:text="@string/sample_name"
         android:textColor="@color/colorWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp"
+        android:paddingTop="4dp"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
 
-</LinearLayout>
+</RelativeLayout>
